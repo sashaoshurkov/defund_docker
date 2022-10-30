@@ -26,8 +26,7 @@ docker run --rm -it --name defund_init --network host -v $HOME/.defund:/root/.de
 
 # Add genesis account
 ```bash
-WALLET_ADDRESS=$(docker run --rm -it --name defund_init --network host -v $HOME/.defund:/root/.defund sashaoshurkov/defund:v0.1.0-alpha defundd keys show [wallet_name] -a); \
-docker run --rm -it --name defund_init --network host -v $HOME/.defund:/root/.defund sashaoshurkov/defund:v0.1.0-alpha defundd add-genesis-account $WALLET_ADDRESS 100000000ufetf
+docker run --rm -it --name defund_init --network host -v $HOME/.defund:/root/.defund sashaoshurkov/defund:v0.1.0-alpha defundd add-genesis-account [wallet_name] 100000000ufetf
 ```
 
 # Generate gentx
