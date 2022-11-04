@@ -9,7 +9,7 @@ RUN git clone https://github.com/defund-labs/defund.git; \
     git checkout v0.1.0; \
     make install; \
     make clean; \
-    cd .. && rm -rf mun
+    cd .. && rm -rf defund
 
 FROM ubuntu:20.04
 
