@@ -6,7 +6,7 @@ RUN apt-get update; \
 
 RUN git clone https://github.com/defund-labs/defund.git; \
     cd defund; \
-    git checkout v0.1.0-alpha; \
+    git checkout v0.1.0; \
     make install; \
     make clean; \
     cd .. && rm -rf mun
