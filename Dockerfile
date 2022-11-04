@@ -19,4 +19,4 @@ COPY --from=builder /go/bin/defundd /usr/bin
 
 EXPOSE 1317 6060 9090 9091 26656 26657 26658 26660
 
-CMD ["/usr/bin/defundd", "start", "--pruning=nothing", "--rpc.laddr=tcp://0.0.0.0:26657"]
+CMD ["/usr/bin/defundd", "start"]
