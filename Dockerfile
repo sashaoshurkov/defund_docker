@@ -17,7 +17,7 @@ WORKDIR /root
 
 COPY --from=builder /go/bin/defundd /usr/bin
 COPY --from=builder /go/bin/simd /usr/bin
-COPY --from=builder /go/pkg/mod/github.com/!cosm!wasm/wasmvm@v1.0.0/api/libwasmvm.x86_64.so /usr/lib
+COPY --from=builder /go/pkg/mod/github.com/!cosm!wasm/wasmvm@v1.1.1/internal/api/libwasmvm.x86_64.so /usr/lib
 
 EXPOSE 1317 6060 9090 9091 26656 26657 26658 26660
 
