@@ -1,4 +1,4 @@
-FROM golang:1.18 AS builder
+FROM golang:1.19 AS builder
 
 RUN apt-get update; \
     apt-get install -y build-essential git; \
@@ -6,7 +6,7 @@ RUN apt-get update; \
 
 RUN git clone https://github.com/defund-labs/defund.git; \
     cd defund; \
-    git checkout v0.2.1; \
+    git checkout v0.2.2; \
     make install; \
     make clean; \
     cd .. && rm -rf defund
